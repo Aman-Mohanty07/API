@@ -29,4 +29,4 @@ app.post("/register", async (req, res) => {
     res.status(201).json({msg: "user registered successfully"})
 })
 
-app.listen(port, () => console.log(`App listening on port ${port}!`))
+app.listen(port, () => console.log(`App listening at http://localhost:${port}!`))
