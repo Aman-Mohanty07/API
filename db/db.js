@@ -5,6 +5,7 @@ mongoose
     .connect(mongo_uri)
     .then(() => console.log("Connected"))
     .catch(err => console.log(err))
+
 // auth schema
 const authSchema = new mongoose.Schema({
     email: {
