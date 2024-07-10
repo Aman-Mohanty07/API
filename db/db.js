@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongo_uri = process.env.mongo_uri || 'mongodb://localhost:27017/authtest';
+const mongo_uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/authtest';
 mongoose
     .connect(mongo_uri, {
         useNewUrlParser: true,
