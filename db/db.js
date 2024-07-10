@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 
 const mongo_uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/authtest';
 mongoose
-    .connect(mongo_uri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      })
+    .connect(mongo_uri)
     .then(() => console.log("Connected"))
     .catch(() => console.log("Error"))
 
