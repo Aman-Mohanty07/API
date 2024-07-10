@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-const mongo_uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/authtest';
+require('dotenv').config()
+const mongo_uri = process.env.MONGO_URI;
 mongoose
     .connect(mongo_uri)
     .then(() => console.log("Connected"))
